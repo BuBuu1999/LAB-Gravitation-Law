@@ -21,7 +21,7 @@ public class GravityA : MonoBehaviour
 
         if (distance == 0) { return; }
 
-        float forcemagnitude = G * ((rb.mass * other.rb.mass) / Mathf.Pow(distance, 2));
+        float forcemagnitude = G * ((rb.mass * rbOther.mass) / Mathf.Pow(distance, 2));
         Vector3 force = forcemagnitude * direction.normalized;
     }
 
